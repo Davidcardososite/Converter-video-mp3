@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+        <div class="botaohamburger">
+        <button class="botaohamburger1"></button>
+        <button class="botaohamburger2"></button>
+        <button class="botaohamburger3"></button>
+        </div>
+        <ul class="nav_list">
+            <li><a href="https://escorpion1998.pythonanywhere.com/">Baixar videos</a></li>
+            <li><a href="https://github.com/Davidcardososite">Github</a></li>
+            <li><a href="mailto:davidcardososites@gmail.com">Email</a></li>
+            <li><a href="https://wa.me/5586999145517">Contato</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+    <img class="imglogo" src="{{ url_for('static', filename='imagens/imgyoutube.png') }}">
+    
+    <main class="privacidade-termos">
+        <h1>Política de Privacidade</h1>
+        <section>
+            <h2>1. Introdução</h2>
+            <p>Esta Política de Privacidade explica como coletamos, usamos, e protegemos suas informações ao usar nosso aplicativo de conversão de vídeos do YouTube para MP3. Seu uso contínuo deste serviço constitui sua aceitação desta política.</p>
+        </section>
+
+        <section>
+            <h2>2. Coleta de Informações</h2>
+            <p><strong>Informações Pessoais:</strong> Não coletamos informações pessoais identificáveis, como nome, endereço ou dados de contato, durante o uso do aplicativo.</p>
+            <p><strong>Dados de Uso:</strong> Podemos coletar informações sobre o uso do serviço, como o endereço IP, tipo de dispositivo, navegador utilizado e interações com o site. Esses dados são coletados de forma anônima e usados para melhorar o serviço.</p>
+        </section>
+
+        <section>
+            <h2>3. Uso das Informações</h2>
+            <p>As informações coletadas são utilizadas exclusivamente para os seguintes fins:</p>
+            <ul>
+                <li>Manter o serviço funcionando corretamente.</li>
+                <li>Melhorar a experiência do usuário e otimizar o desempenho do site.</li>
+                <li>Analisar e monitorar o uso do serviço para identificar e corrigir problemas.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Armazenamento e Segurança das Informações</h2>
+            <p><strong>Armazenamento:</strong> Não armazenamos arquivos convertidos a longo prazo. Os arquivos são removidos automaticamente do servidor 24 horas após a conversão.</p>
+            <p><strong>Segurança:</strong> Implementamos medidas de segurança técnicas e organizacionais para proteger os dados contra acesso não autorizado, perda ou destruição. No entanto, nenhum método de transmissão ou armazenamento eletrônico é 100% seguro, e não podemos garantir segurança absoluta.</p>
+        </section>
+
+        <section>
+            <h2>5. Cookies</h2>
+            <p>Este aplicativo pode usar cookies para armazenar informações temporárias e facilitar a navegação. Você pode desativar os cookies no seu navegador, mas isso pode afetar a funcionalidade do serviço.</p>
+        </section>
+
+        <section>
+            <h2>6. Compartilhamento de Informações</h2>
+            <p>Não vendemos, trocamos ou transferimos informações de usuários para terceiros. Os dados coletados são usados exclusivamente para fins internos de análise e melhoria do serviço.</p>
+            <p>Em casos raros, podemos ser obrigados por lei a divulgar informações para cumprir com uma ordem judicial ou outro processo legal.</p>
+        </section>
+
+        <section>
+            <h2>7. Links para Sites de Terceiros</h2>
+            <p>Nosso serviço pode conter links para sites externos. Não somos responsáveis pelas práticas de privacidade ou pelo conteúdo desses sites. Recomendamos que você leia as políticas de privacidade de qualquer site de terceiros que você visite.</p>
+        </section>
+
+        <section>
+            <h2>8. Alterações nesta Política de Privacidade</h2>
+            <p>Podemos atualizar esta Política de Privacidade periodicamente. Todas as alterações serão publicadas nesta página. Recomendamos que você revise esta política regularmente para se manter informado sobre como protegemos suas informações.</p>
+        </section>
+
+        <section>
+            <h2>9. Contato</h2>
+            <p>Se você tiver dúvidas ou preocupações sobre esta Política de Privacidade, entre em contato conosco através do e-mail: <a href="mailto:davidcardosodefarias@gmail.com">davidcardosodefarias@gmail.com</a></p>
+        </section>
+    </main>
+    
+<footer>
+    <p>&copy; 2024 Seu Nome de Empresa</p>
+    <div class="rodape">
+        <a href="{{ url_for('termos') }}">Termos e Condições de Uso</a>
+        
+        <a href="{{ url_for('privacidade') }}">Política de Privacidade</a>
+        
+        <a href="mailto:seuemail@dominio.com">Contato</a>
+        
+    </div>
+</footer>
+    
+<script src="{{ url_for('static', filename='js/java.js') }}"></script>
+    
+</body>
+</html>

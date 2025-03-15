@@ -1,0 +1,1184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.league-spartan-<uniquifier> {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <800>;
+  font-style: italic;
+}
+
+
+
+.imglogo {
+    width: 130px;
+    height: 50px;
+    z-index: 5;
+    margin: 3px;
+    top: 0;
+    position: fixed;
+}
+
+
+
+h2 {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <800>;
+    font-style: normal;
+    color: #4169E1;
+    text-align: center;
+}
+
+
+
+h3 {
+    top: 40px;
+    position: relative;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <800>;
+    font-style: normal;
+    font-size: 25px;
+    color: #DCDCDC;
+    text-align: center;
+}
+
+
+
+a {
+    text-align: center;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+
+html {
+    font-size: 16px; /* Define a base para rem */
+}
+
+
+html, body {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <800>;
+    font-style: normal;
+    background-color: #1C1C1C;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    z-index: 1;
+    justify-content: flex-end;
+    display: flex;
+    background-color: #363636;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    border-bottom: none;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.9);
+}
+
+
+
+
+
+
+
+/* estilos para o menu */
+.nav_list {
+    z-index: 10;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.nav_list li {
+    margin-right: 20px;
+}
+
+.nav_list a {
+    font-size: 15px;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav_list a:hover {
+    color: black;
+    transition: 0.3s;
+}
+/**/
+
+
+
+
+
+
+
+
+
+
+
+/* estilos para o botão hamburger */
+
+.botaohamburger {
+    display: none;
+}
+
+
+
+.botaohamburger1,
+.botaohamburger2,
+.botaohamburger3 {
+    background-color: white;
+    width: 30px;
+    margin: 3px;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+/**/
+
+
+
+
+
+
+
+/* animações*/
+@keyframes rotateAntiClockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.imagem-processando {
+    animation: rotateAntiClockwise 1s linear infinite;
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+@keyframes animationopacity {
+    0% {
+    opacity: 1;
+    }
+    50% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
+.convertendo {
+    color: black;
+    animation: animationopacity 3s linear infinite;
+    display: none;
+}
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* estilos para o formulário*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: 40px;
+}
+
+
+
+input[type="submit"] {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <800>;
+    font-style: italic;
+    margin: auto;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #000000; /* 1px */
+    display: block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"]:hover {
+    background-color: #00008B;
+    transition: 0.3s;
+}
+
+
+
+.download-link {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <800>;
+    font-style: italic;
+    transition: 0.3s;
+    margin-left: 450px;
+    margin-right: 450px;
+    cursor: pointer;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #000000; /* 1px */
+    display: block;
+    text-align: center;
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.download-link:hover {
+    transition: 0.3s;
+    background-color: green;
+}
+
+
+
+select {
+    font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <800>;
+  font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #000000; /* 1px */
+    color: white;
+    font-size: 15px;
+    background-color: #4169E1;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
+}
+
+select:focus {
+    outline: none;
+}
+
+
+
+input[type="text"] {
+    font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <800>;
+  font-style: normal;
+  width: 200px;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 24px;
+    cursor: text;
+}
+
+input[type="text"]::placeholder {
+    font-size: 20px;
+    color: #A9A9A9;
+}
+
+.search-container {
+    display: flex;
+    width: 500px;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+
+#converted_files_list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+.tudo-container1 {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+
+
+.accordion-container h4 {
+    margin: 15px;
+}
+
+
+
+.panel {
+    display: none;
+    overflow: hidden;
+}
+
+
+.panel p {
+    text-align: left;
+    margin: 30px;
+}
+
+
+
+
+.accordion {
+    position: absolute;
+    right: 200px;
+    margin-right: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.4);
+    transition: 0.4s;
+    border-radius: 100%;
+}
+
+ .active, .accordion:hover {
+    background-color: #ccc;
+}
+        
+.accordion :focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+.imagemseta {
+    transition: transform 0.4s ease;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+.active .imagemseta {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tudo-container2 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.logos {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 50px;
+    margin: 20px;
+    border-radius: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    
+}
+
+
+.logos.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.logos p {
+    margin: 15px;
+    font-size: 15px;
+    color: black;
+    text-align: left;
+}
+
+
+.logos img {
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+/* estilos para o footer */
+footer {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    background-color: #DCDCDC;
+}
+
+.rodape  {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+}
+
+
+.rodape a  {
+    color: black;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+/**/
+
+
+
+
+
+
+
+
+
+
+
+/* estilos para a pagina privacidade e politicas */
+.privacidade-termos {
+    margin-top: 80px;
+}
+
+
+.privacidade-termos section {
+    background-color: white;
+    padding: 20px 200px;
+    border-top: 1px solid black;
+}
+
+
+.privacidade-termos h1 {
+    color: black;
+    text-align: center;
+    color: #DCDCDC;
+}
+
+
+.privacidade-termos h2 {
+    color: black;
+    text-align: left;
+    color: black;
+}
+
+.privacidade-termos p {
+    color: black;
+}
+
+
+
+.privacidade-termos ul {
+}
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+html, body {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <800>;
+    font-style: normal;
+    background-color: #1C1C1C;
+    margin: 0;
+    padding: 0;
+}
+    
+    
+    
+h2 {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <800>;
+    font-style: normal;
+    color: #4169E1;
+    text-align: center;
+}
+    
+    
+    
+h3 {
+    position: relative;
+    top: 40px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <800>;
+    font-style: normal;
+    font-size: 25px;
+    color: #DCDCDC;
+    text-align: center;
+}
+    
+    
+
+header {
+    z-index: 4;
+    position: fixed;
+    width: 100%;
+    background-color: #363636;
+    height: 50px;
+    top: 0;
+    margin: 0;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.9); /* 10px */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* estilos para o menu */
+.nav_list {
+    overflow: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    margin: 0;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 0;
+    background-color: #363636;
+    transition: opacity 0.4s ease, width 0.4s ease;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.9);
+}
+
+.nav_list.open {
+    width: 150px;
+    opacity: 1;
+}
+
+
+.nav_list li {
+    list-style: none;
+    top: 150px;
+    margin: 0;
+    position: relative;
+    padding-top: 40px;
+    border-bottom: none;
+}
+
+
+.nav_list a {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    padding-inline: 10px;
+    padding-block: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.nav_list a:hover {
+    color: black;
+    transition: 0.3s;
+}
+
+
+/* estilos para a animação de delay */
+.nav_list li:nth-child(1) a {
+    transition-delay: 0.2s;
+}
+
+.nav_list li:nth-child(2) a {
+    transition-delay: 0.3s;
+}
+
+.nav_list li:nth-child(3) a {
+    transition-delay: 0.4s;
+}
+
+.nav_list li:nth-child(4) a {
+    transition-delay: 0.5s;
+}
+
+.nav_list li:nth-child(5) a {
+    transition-delay: 0.6s;
+}
+
+.nav_list.open li:nth-child(1) a {
+    opacity: 1;
+}
+
+.nav_list.open li:nth-child(2) a {
+    opacity: 1;
+}
+
+.nav_list.open li:nth-child(3) a {
+    opacity: 1;
+}
+
+.nav_list.open li:nth-child(4) a {
+    opacity: 1;
+}
+
+.nav_list.open li:nth-child(5) a {
+    opacity: 1;
+}
+
+/**/
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+/* estilos para o botão hamburger */
+
+.botaohamburger {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    top: 5px;
+    margin: 10px;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+}
+
+
+/* Roda o primeiro botão */
+.botaohamburger1.open {
+    background-color: #007bff;
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+    position: absolute;
+    top: 10px; /* Alinha no centro vertical */
+}
+
+/* Esconde o segundo botão */
+.botaohamburger2.open {
+    opacity: 0;
+}
+
+/* Roda o terceiro botão */
+.botaohamburger3.open {
+    background-color: #007bff;
+    transform: rotate(-45deg);
+    transform-origin: 50% 50%;
+    position: absolute;
+    top: 10px; /* Alinha no centro vertical */
+}
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin: 0;
+    margin-top: 50px;
+}
+
+
+
+select {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <800>;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #000000; /* 1px */
+    color: white;
+    font-size: 17px;
+    background-color: #4169E1;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
+    padding: 5px;
+}
+    
+select:focus {
+    outline: none;
+}
+    
+    
+
+input[type="text"] {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <800>;
+    font-style: normal;
+    width: 250px;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 24px;
+}
+
+
+
+input[type="text"]::placeholder {
+    color: #A9A9A9;
+    font-size: 15px;
+}
+
+.search-container {
+    display: flex;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 3px;
+}
+    
+    
+
+input[type="submit"] {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <800>;
+    font-style: italic;
+    margin: auto;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #000000; /* 1px */
+    display: block;
+    padding: 10px 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"]:hover {
+    background-color: #00008B;
+    transition: 0.3s;
+}
+    
+    
+    
+.download-link {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <800>;
+    font-style: italic;
+    transition: 0.3s;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #000000; /* 1px */
+    margin-left: 130px;
+    margin-right: 130px; 
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
+}
+
+.download-link:hover {
+    transition: 0.3s;
+    background-color: green;
+}
+    
+    
+    
+#converted_files_list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+    
+
+
+.imglogo {
+    width: 130px;
+    height: 50px;
+    z-index: 5;
+    margin: 3px;
+    top: 0;
+    position: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.tudo-container1 {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+
+
+.accordion-container h4 {
+    margin: 15px;
+    text-align: left;
+}
+
+
+
+.panel {
+    display: none;
+    overflow: hidden;
+}
+
+
+.panel p {
+    text-align: left;
+    margin: 30px;
+}
+
+
+
+
+ .accordion {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.4);
+    transition: 0.4s;
+    border-radius: 100%;
+}
+
+ .active, .accordion:hover {
+    background-color: #ccc;
+}
+        
+.accordion :focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+.imagemseta {
+    transition: transform 0.4s ease;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+.active .imagemseta {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tudo-container2 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.logos {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    
+}
+
+
+.logos.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.logos h4 {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+}
+
+
+.logos p {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+}
+
+
+.logos img {
+    width: 80px;
+    height: 80px;
+}
+
+
+
+
+
+
+
+
+
+/* etilos para o footer */
+footer {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    background-color: #DCDCDC;
+}
+
+.rodape  {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+}
+
+
+.rodape a  {
+    color: black;
+}
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+/* estilos para a pagina privacidade e politicas */
+.privacidade-termos {
+    margin-top: 80px;
+}
+
+
+.privacidade-termos section {
+    background-color: white;
+    padding: 5px 10px ;
+    border-top: 1px solid black;
+}
+
+
+.privacidade-termos ul {
+    font-size: 20px;
+}
+
+
+.privacidade-termos h1 {
+    color: black;
+    text-align: center;
+    color: #DCDCDC;
+    font-size: 20px;
+}
+
+
+.privacidade-termos h2 {
+    color: black;
+    text-align: left;
+    margin-left: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+.privacidade-termos p {
+    color: black;
+    font-size: 20px;
+}
+/**/
+
+
+
+
+}

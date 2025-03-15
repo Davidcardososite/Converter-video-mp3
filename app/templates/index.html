@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de vídeos para MP3 grátis</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <nav class="nav">
+        <div class="botaohamburger">
+        <button class="botaohamburger1"></button>
+        <button class="botaohamburger2"></button>
+        <button class="botaohamburger3"></button>
+        </div>
+        <ul class="nav_list">
+            <li><a href="https://escorpion1998.pythonanywhere.com/">Baixar videos</a></li>
+            <li><a href="https://github.com/Davidcardososite">Github</a></li>
+            <li><a href="mailto:davidcardososites@gmail.com">Email</a></li>
+            <li><a href="https://wa.me/5586999145517">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<img class="imglogo" src="{{ url_for('static', filename='imagens/imgyoutube.png') }}">
+
+<form id="audio_form" action="/upload_youtube" method="post" enctype="multipart/form-data">
+    
+    <h2>Converter Vídeos do YouTube para MP3 grátis</h2>
+    
+    <a href="{{ url_for('auth.termos') }}">Ao utilizar este serviço você aceita os Termos e Condições de Uso</a>
+    <br>
+    
+    <div class="search-container">
+        <input type="text" id="youtube_url" name="youtube_url" placeholder="Colar link do vídeo do YouTube" required="">
+    </div>
+    <br>
+    
+    
+    <select id="quality" name="quality">
+        <option value="128">128kbps</option>
+        <option value="192">192kbps</option>
+        <option value="320">320kbps</option>
+    </select>
+    
+    <input type="submit" value="CONVERTER PARA MP3">
+    <div><br>
+        
+        <!--  imagens de carregamento -->
+        <img class="imagem-processando" src="{{ url_for('static', filename='imagens/carregar2.png') }}" style="text-align: center;">
+    </div>
+    <div class="convertendo">convertendo</div>
+    
+    <div id="converted_files_list">
+    <!-- arquivos convertidos e os links de download -->
+    </div>
+    
+</form>
+
+
+
+
+<h3>Como Converter Vídeos do YouTube para MP3 ?</h3>
+
+<div class="tudo-container1">
+    <div class="accordion-container">
+        <h4>Como copiar link do video do YouTube ?</h4>
+        <button class="accordion">
+        <img class="imagemseta" src="{{ url_for('static', filename='imagens/acordeon.png') }}"></button>
+        <div class="panel">
+            <p> Abra o YouTube e procure por a opção compartilhar.<br/><br/>Copie o link do vídeo do YouTube que você deseja converter para MP3.
+            <br/><br/> Cole o link no campo "Colar link do vídeo do YouTube".</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="accordion-container">
+        <h4>Qual qualidade selecionar ?</h4>
+        <button class="accordion">
+            <img class="imagemseta" src="{{ url_for('static', filename='imagens/acordeon.png') }}"></button>
+        <div class="panel">
+        <p><strong>128 kbps:</strong> Qualidade padrão, tamanho menor.<br/><br/>
+        <strong>192 kbps:</strong> Qualidade intermediária.<br/><br/>
+        <strong>320 kbps:</strong> Alta qualidade, maior tamanho de arquivo.</p>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <div class="accordion-container">
+        <h4>Como converter o video ?</h4>
+        <button class="accordion">
+            <img class="imagemseta" src="{{ url_for('static', filename='imagens/acordeon.png') }}"></button>
+        <div class="panel">
+        <p>Clique no botão "CONVERTER PARA MP3".
+        <br/><br/> Aguarde o processamento do vídeo.
+        <br/><br/> Quando a conversão for concluída, o link para download do arquivo MP3 aparecerá.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<h3>Melhor aplicativo para Converter Vídeos do YouTube para MP3</h3>
+<div class="tudo-container2">
+    <div class="logos">
+        <img src="{{ url_for('static', filename='imagens/escudo.png') }}">
+        <p><strong>SEGURANÇA: </strong>Esse aplicativo web de conversão de vídeos do YouTube para MP3 foi desenvolvido com um foco significativo na segurança e privacidade dos usuários.</p>
+    </div>
+    
+    <div class="logos">
+        <img src="{{ url_for('static', filename='imagens/gratis.png') }}">
+        <p><strong>GRATUITO: </strong>Este serviço é totalmente gratuito e foi desenvolvido para facilitar a sua vida, permitindo que você converta seus vídeos favoritos do YouTube em arquivos MP3 de alta qualidade, sem qualquer custo.</p>
+    </div>
+    
+    <div class="logos">
+        <img src="{{ url_for('static', filename='imagens/relogio.png') }}">
+        <p><strong>VELOCIDADE: </strong>A velocidade pode variar dependendo da duração do vídeo e da qualidade de áudio selecionada, mas garantimos uma conversão rápida e confiável para que você possa acessar seus arquivos MP3 em questão de segundos.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Seu Nome de Empresa</p>
+    <div class="rodape">
+        <a href="{{ url_for('auth.termos') }}">Termos e Condições de Uso</a>
+        
+        <a href="{{ url_for('auth.privacidade') }}">Política de Privacidade</a>
+        
+        <a href="mailto:seuemail@dominio.com">Contato</a>
+        
+    </div>
+</footer>
+
+
+
+<script src="{{ url_for('static', filename='js/java.js') }}"></script>
+</body>
+</html>
+
+
+
+
+
+

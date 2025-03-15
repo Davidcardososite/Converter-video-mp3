@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos e Condições de Uso</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+        <div class="botaohamburger">
+        <button class="botaohamburger1"></button>
+        <button class="botaohamburger2"></button>
+        <button class="botaohamburger3"></button>
+        </div>
+        <ul class="nav_list">
+            <li><a href="https://escorpion1998.pythonanywhere.com/">Baixar videos</a></li>
+            <li><a href="https://github.com/Davidcardososite">Github</a></li>
+            <li><a href="mailto:davidcardososites@gmail.com">Email</a></li>
+            <li><a href="https://wa.me/5586999145517">Contato</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+    <img class="imglogo" src="{{ url_for('static', filename='imagens/imgyoutube.png') }}">
+    
+    <main class="privacidade-termos">
+        
+        <h1>Termos e Condições de Uso</h1>
+        <section>
+            <h2>1. Aceitação dos Termos</h2>
+            <p>Ao acessar e usar este aplicativo de conversão de vídeos do YouTube para MP3, você concorda em cumprir e estar sujeito aos Termos e Condições abaixo. Se você não concorda com qualquer parte destes termos, não deve usar o serviço.</p>
+        </section>
+
+        <section>
+            <h2>2. Uso do Serviço</h2>
+            <p>Este serviço é oferecido gratuitamente para converter vídeos do YouTube em arquivos MP3 para uso pessoal e não comercial. O uso deste serviço para fins que violem as leis de direitos autorais ou qualquer outra legislação aplicável é estritamente proibido.</p>
+        </section>
+
+        <section>
+            <h2>3. Responsabilidade do Usuário</h2>
+            <ul>
+                <li>O usuário é o único responsável pelo uso do serviço e pelas consequências decorrentes do uso dos arquivos MP3 gerados.</li>
+                <li>O usuário concorda em não usar o serviço para violar direitos de propriedade intelectual, distribuir material protegido por direitos autorais ou infringir as políticas do YouTube.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Direitos Autorais e Propriedade Intelectual</h2>
+            <p>Este serviço não reivindica nenhum direito sobre o conteúdo do YouTube. Todos os direitos sobre os vídeos pertencem aos seus respectivos proprietários. A conversão de vídeos só deve ser realizada com o consentimento do proprietário dos direitos autorais ou se o vídeo estiver sob uma licença que permita a conversão.</p>
+        </section>
+
+        <section>
+            <h2>5. Limitação de Responsabilidade</h2>
+            <ul>
+                <li>O serviço é fornecido "como está" e "conforme disponível". Não oferecemos garantias de que o serviço será ininterrupto, livre de erros ou totalmente seguro.</li>
+                <li>Não nos responsabilizamos por quaisquer danos diretos, indiretos, incidentais, especiais, consequentes ou exemplares, incluindo, mas não se limitando a, perda de lucros, uso, dados ou outras perdas intangíveis resultantes do uso ou da incapacidade de usar o serviço.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Privacidade</h2>
+            <p>Nenhum dado pessoal é coletado ou armazenado ao usar este serviço. Os arquivos convertidos são removidos automaticamente após 24 horas para garantir a privacidade e segurança dos usuários.</p>
+        </section>
+
+        <section>
+            <h2>7. Alterações nos Termos</h2>
+            <p>Reservamo-nos o direito de modificar estes Termos e Condições a qualquer momento. Quaisquer alterações entrarão em vigor imediatamente após a publicação no site. O uso continuado do serviço após a publicação de alterações constitui aceitação dessas mudanças.</p>
+        </section>
+
+        <section>
+            <h2>8. Legislação Aplicável</h2>
+            <p>Estes Termos e Condições são regidos pelas leis do país em que o serviço está hospedado, sem considerar os princípios de conflitos de leis.</p>
+        </section>
+
+        <section>
+            <h2>9. Contato</h2>
+            <p>Se você tiver dúvidas sobre estes Termos e Condições, entre em contato conosco através do e-mail: <a href="mailto:davidcardosodefarias@gmail.com">davidcardosodefarias@gmail.com</a></p>
+        </section>
+    </main>
+    
+<footer>
+    <p>&copy; 2024 Seu Nome de Empresa</p>
+    <div class="rodape">
+        <a href="{{ url_for('termos') }}">Termos e Condições de Uso</a>
+        
+        <a href="{{ url_for('privacidade') }}">Política de Privacidade</a>
+        
+        <a href="mailto:seuemail@dominio.com">Contato</a>
+        
+    </div>
+</footer>
+    
+    
+<script src="{{ url_for('static', filename='js/java.js') }}"></script>
+    
+</body>
+</html>
