@@ -231,6 +231,12 @@ Este software é fornecido "como está", sem garantias. A conversão de conteúd
 - [FFmpeg](https://ffmpeg.org/) - Pela excelente capacidade de conversão
 - [Flask](https://flask.palletsprojects.com/) - Framework web leve e flexível
 
+- ## 📧 Contato
+
+- Email davidcardosodefarias@gmail.com
+
+- [Instagram](https://www.instagram.com/david_cardoso01/)
+
 ## 📊 Exemplo de Uso
 
 ```python
