@@ -266,7 +266,7 @@ fetch('/upload_youtube', {
 
 - Abra uma issue no GitHub para bugs
 - Sugira melhorias via Pull Requests
-- Dúvidas: [seu-email@exemplo.com](mailto:seu-email@exemplo.com)
+- Dúvidas: [devdavid1998@gmail.com](mailto:devdavid1998@gmail.com)
 
 ---
 
