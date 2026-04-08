@@ -311,12 +311,3 @@ cookies.txt
 .DS_Store
 Thumbs.db
 ```
-
-## ✅ Diferenças principais do projeto anterior:
-
-1. **Foco em áudio**: Remove a parte de lives (não suportado para MP3)
-2. **Post-processing**: Usa FFmpeg para converter para MP3
-3. **Qualidade selecionável**: Usuário pode escolher o bitrate
-4. **Suporte a M4A**: Além de MP4/WebM/MKV, também aceita M4A como fonte
-
-O README está pronto para copiar e colar! Apenas lembre de substituir as informações de contato e URL do repositório. 🚀
