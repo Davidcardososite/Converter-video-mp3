@@ -1,4 +1,4 @@
-![Logo](/Converter-video-mp3/conversor-de-video.jpg)
+![Logo](video-converter.jpg)
 ```markdown
 # 🎵 YouTube to MP3 Converter Web App
 
