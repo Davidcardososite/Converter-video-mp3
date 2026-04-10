@@ -5,6 +5,7 @@
   ![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)
   ![yt-dlp](https://img.shields.io/badge/yt--dlp-Supported-red.svg)
   ![Flask](https://img.shields.io/badge/Flask-blue.svg)
+  ![FFmpeg](https://img.shields.io/badge/FFmpeg-blue.svg)
 
 
   
